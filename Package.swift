@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "ModalCustomizationSPM",
+    platforms: [
+        .iOS(.v14)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -12,7 +15,6 @@ let package = Package(
             targets: ["ModalCustomizationFramework"]),
     ],
     targets: [
-            name: "ModalCustomizationSPM",
       .binaryTarget(
         name: "ModalCustomizationFramework",
         path: "./Sources/ModalCustomizationFramework.xcframework")
