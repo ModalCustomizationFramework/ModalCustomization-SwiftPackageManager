@@ -1,0 +1,6 @@
+framework module ModalCustomizationFramework {
+  umbrella header "ModalCustomizationFramework.h"
+
+  export *
+  module * { export * }
+}
